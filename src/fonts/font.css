@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'National-Light';
+  src: url('National-Light.eot');
+  src: url('National-Light.woff2') format('woff2'),
+       url('National-Light.woff') format('woff'),
+       url('National-Light.ttf') format('truetype'),
+       url('National-Light.svg#National-Light') format('svg'),
+       url('National-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

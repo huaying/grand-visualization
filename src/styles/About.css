@@ -1,0 +1,65 @@
+.about .content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 80px 20px 0;
+}
+
+.about .quote {
+  margin-bottom: 80px;
+  font-size: 32px;
+}
+
+.about .panel {
+  margin-bottom: 100px;
+}
+
+.about .panel .panel-title {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.about .panel .panel-body {
+  font-size: 20px;
+}
+
+.about .icon_group {
+  display: flex;
+  margin: 60px 0px 100px;
+}
+
+.about .icon_group img {
+  flex: 1;
+  text-align: center;
+  margin-left: 100px;
+}
+
+.about .icon_group img:first-child {
+  margin-left: 0;
+}
+
+.about ul li{
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.about .footer .image-group{
+  display: flex;
+}
+.about .footer .image-group img {
+  flex: 1;
+  height: 23vw;
+  margin-left: 5px;
+}
+
+.about .footer .image-group img:first-child {
+  margin-left: 0;
+}
+
+.about .footer .more {
+  float: right;
+  padding: 20px 20px 0 0;
+
+}
+.about .footer .copyright {
+  padding: 50px 0 15px 15px;
+}

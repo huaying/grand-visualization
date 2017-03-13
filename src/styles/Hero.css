@@ -1,0 +1,16 @@
+.hero.header {
+  background-image: url("../images/hero-blur.png");
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.logo {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+}
+
+.logo > nav {
+  margin-left: 128px;
+  font-size: 19px;
+}
