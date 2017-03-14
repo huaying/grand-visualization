@@ -5,6 +5,7 @@ const setFullScreen = (fullScreen) => {
   } else {
     document.body.style.height = 'auto';
     document.body.style.overflow = 'inherit';
+    document.body.style.overflowX = 'hidden';
   }
 };
 

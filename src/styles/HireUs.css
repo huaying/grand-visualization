@@ -1,0 +1,62 @@
+.contact-form {
+  margin-top: -40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form > div{
+  padding: 10px 0;
+}
+
+.contact-form .group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form .contact-name {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.contact-form .contact-company {
+  flex: 1;
+  margin-left: 10px;
+}
+
+
+.contact-form label, .contact-form input, .contact-form textarea {
+  display: block;
+  width: 100%;
+}
+
+.contact-form label {
+  height: 42px;
+}
+
+.contact-form input {
+  height: 42px;
+  border: 1px solid #AAA;
+  border-radius: 4px;
+}
+
+.contact-form textarea{
+  height: 420px;
+  border: 1px solid #AAA;
+  border-radius: 4px;
+}
+
+.contact-form .submit {
+  text-align: center;
+}
+
+.contact-form .submit button {
+  height: 42px;
+  color: white;
+  background: black;
+  width: 150px;
+  border-radius: 7px;
+}
+
+.hire-us .footer {
+  margin-bottom: 50px;
+}

@@ -20,3 +20,27 @@ a {
 a:hover {
   color: #0b87d4;
 }
+
+.content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 80px 20px 0;
+}
+
+.quote {
+  margin-bottom: 80px;
+  font-size: 32px;
+}
+
+.panel {
+  margin-bottom: 100px;
+}
+
+.panel .panel-title {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.panel .panel-body {
+  font-size: 20px;
+}

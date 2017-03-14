@@ -1,11 +1,12 @@
 .hero.header {
   background-image: url("../images/hero-blur.png");
   background-repeat: no-repeat;
+  background-size: cover;
   height: 500px;
 }
 
 .logo {
-  position: absolute;
+  position: relative;
   left: 10%;
   top: 20%;
 }
