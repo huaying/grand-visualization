@@ -1,0 +1,51 @@
+.projects > div {
+  margin: 0 auto;
+  max-width: 920px;
+
+}
+
+.projects .grid-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.projects .grid-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects .grid-item {
+  flex: 1;
+}
+
+.projects .grid-row > .grid-item:nth-of-type(2),
+.projects .grid-row > .grid-item2:nth-of-type(2) {
+  padding-left: 5px;
+}
+
+.projects .grid-item2 {
+  flex: 2;
+}
+
+.projects img {
+  width: 100%;
+}
+
+/*
+.projects .grid img:nth-of-type(2) {
+  position: absolute;
+  top: 435px;
+  width: 33%;
+}
+
+.projects .grid img:nth-of-type(3) {
+  position: absolute;
+  top: 435px;
+  left: 34%;
+  width: 66%;
+}*/
+
+
+/*.projects .grid > img {
+  max-width: 100%;
+}*/
