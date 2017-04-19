@@ -1,12 +1,27 @@
 .about .icon_group {
   display: flex;
-  margin: 60px 0px 100px;
+  margin: 60px auto 100px;
+  text-align: center;
 }
 
 .about .icon_group img {
-  flex: 1;
-  text-align: center;
   margin-left: 100px;
+  height: 100px;
+}
+
+
+@media (max-width: 720px) {
+  .about .icon_group img {
+    margin-left: 13vw;
+    height: 12vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .about .icon_group img {
+    margin-left: 50px;
+    height: 60px;
+  }
 }
 
 .about .icon_group img:first-child {

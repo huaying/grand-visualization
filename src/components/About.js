@@ -5,12 +5,13 @@ import icon1 from '../images/icon1.png';
 import icon2 from '../images/icon2.png';
 import icon3 from '../images/icon3.png';
 import icon4 from '../images/icon4.png';
-import photo1 from '../images/work/p8.png';
-import photo2 from '../images/work/p22.png';
-import photo3 from '../images/work/p41.png';
-import photo4 from '../images/work/p43.png';
 import setFullScreen from '../lib/setFullScreen';
 import { Link } from 'react-router-dom';
+
+const photo1 = '/work/p8.png';
+const photo2 = '/work/p22.png';
+const photo3 = '/work/p41.png';
+const photo4 = '/work/p43.png';
 
 const About = () => {
   setFullScreen(false);
