@@ -2,6 +2,8 @@
   display: flex;
   margin: 60px auto 100px;
   text-align: center;
+  justify-content: space-around;
+  align-content: space-around;
 }
 
 .about .icon_group img {
@@ -19,7 +21,7 @@
 
 @media (max-width: 480px) {
   .about .icon_group img {
-    margin-left: 40px;
+    margin-left: 37px;
     height: 55px;
   }
 }

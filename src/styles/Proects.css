@@ -1,7 +1,34 @@
-.projects > div {
+.projects .nav {
+  height: 60px;
   margin: 0 auto;
+  padding: 20px 0;
   max-width: 920px;
+}
 
+.projects .nav .brand img {
+  margin-left: 10px;
+  height: 60px;
+  width: auto;
+}
+
+.projects .nav nav {
+  float: right;
+  margin-top: 40px;
+}
+
+.projects .nav nav > * {
+  margin-right: 50px;
+}
+
+@media (max-width: 480px) {
+  .projects .nav nav > * {
+    margin-right: 10px;
+  }
+}
+
+.projects > .content {
+  max-width: 920px;
+  padding: 0;
 }
 
 .projects .grid-row {
@@ -27,25 +54,6 @@
   flex: 2;
 }
 
-.projects img {
+.projects .content img {
   width: 100%;
 }
-
-/*
-.projects .grid img:nth-of-type(2) {
-  position: absolute;
-  top: 435px;
-  width: 33%;
-}
-
-.projects .grid img:nth-of-type(3) {
-  position: absolute;
-  top: 435px;
-  left: 34%;
-  width: 66%;
-}*/
-
-
-/*.projects .grid > img {
-  max-width: 100%;
-}*/

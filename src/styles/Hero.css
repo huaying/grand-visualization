@@ -2,6 +2,7 @@
   background-image: url("../images/hero-blur.png");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow:hidden;
   height: 500px;
 }
 
@@ -16,6 +17,6 @@
   font-size: 19px;
 }
 
-.logo > nav .active {
+.nav nav .active {
   text-decoration: underline;
 }
