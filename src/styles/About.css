@@ -57,3 +57,36 @@
 .about .footer .copyright {
   padding: 50px 0 15px 15px;
 }
+
+.about .flow {
+  margin-top: 50px;
+  display: flex;
+  text-align: center;
+}
+
+
+@media (max-width: 640px) {
+  .about .flow {
+    flex-direction: column;
+  }
+}
+
+.about .flow img {
+  margin-bottom: 10px;
+  height: 60px;
+}
+
+.about .flow h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.about .flow p {
+  margin-top: -7px;
+  font-size: 16px;
+}
+
+.about .flow > * {
+  flex:1;
+  padding: 10px;
+}

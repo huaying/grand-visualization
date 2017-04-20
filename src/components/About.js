@@ -1,6 +1,9 @@
 import React from 'react';
 import Hero from './Hero';
 import '../styles/About.css';
+import one from '../images/1.png';
+import two from '../images/2.png';
+import three from '../images/3.png';
 import icon1 from '../images/icon1.png';
 import icon2 from '../images/icon2.png';
 import icon3 from '../images/icon3.png';
@@ -43,6 +46,37 @@ const About = () => {
             Our goal is to implement your design to a stunning visualization
             until reaching or exceeding your expected result.
             </p>
+            <div className="flow">
+              <div>
+                <img src={one} alt="one" />
+                <h3>Let us know your needs.</h3>
+                <p>
+                  Send us your documents of the unbuilt project, we will
+                  evaluate the files and give you a quote as soon as possible.
+                </p>
+              </div>
+              <div>
+                <img src={two} alt="two" />
+                <h3>3D Model Creation</h3>
+                <p>
+                  Upon your approval and 25% down payment, we start work into
+                  it immediately. We will show you our draft views and make
+                  adjustments when the 3D model is completed.
+                </p>
+              </div>
+              <div>
+                <img src={three} alt="three" />
+                <h3>Optimization & Delivery</h3>
+                <p>
+                  We will be making changes until the drawings meet your
+                  satisfaction. If you are in Greater Los Angeles area,
+                  we can dispatch our specialist to work on site.
+                  <br />
+                  After receiving your remaining payment, high resolution
+                  drawings will be delivered to you.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <div className="panel">
