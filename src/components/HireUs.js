@@ -42,14 +42,15 @@ const HireUs = () => {
             <button type="button">SUBMIT</button>
           </div>
         </form>
-        <iframe
-          width="600"
-          height="450"
-          frameBorder="0"
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBHz73Uf7iODrRSBrVgkBrm_DozVdKx9fw
-            &q=Space+Needle,Seattle+WA" allowFullScreen
-        >
-        </iframe>
+        <div className="google-maps">
+          <iframe
+            width="720"
+            height="450"
+            frameBorder="0"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAjc1VIVNngxBdpjp3RZ25poJn7VPNNZo0
+              &q=USC,LA&zoom=9"
+          />
+        </div>
         <div className="footer">
           Copyright © 2017, Grand Visionary Inc. All rights reserved.
         </div>
