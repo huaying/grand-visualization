@@ -29,22 +29,22 @@ const About = () => {
           <div className="panel-title">How we work</div>
           <div className="panel-body">
             <p>
-            Grand Visualization is a professional team with the experience of
-            completing unbuilt visualization projects worldwide. We can utilize
-            our expertise to help present your design project with a beautiful
-            narrative approach.
+            Grand Visualization is an experienced team of visualization artists
+            specializing in architectural visualization for projects worldwide.
+            We will utilize our expertise to help craft beautiful images and
+            narratives for your design project.
             </p>
             <p>
-            Our new office locates in Downtown Los Angeles.
-            We can provide in person services if your location is in the Greater
-            Los Angeles Area. We can dispatch our specialists to work onsite and
-            revise at the final stage of the visualization project until your
-            satisfaction. Also, we are willing to work with you via the Internet
-            regardless of your location.
+            Our new office located in Downtown Los Angeles, allows us to provide
+            in-person services for clients located in the Greater Los Angeles
+            Area. We can dispatch our specialists to work onsite and revise at
+            the final stage of the visualization project until your satisfaction.
+            Also, we are willing to work with you via the Internet regardless of
+            your location.
             </p>
             <p>
-            Our goal is to implement your design to a stunning visualization
-            until reaching or exceeding your expected result.
+            We look forward to helping you create stunning visualizations that
+            will reach and exceed your expectations.
             </p>
             <div className="flow">
               <div>
@@ -104,10 +104,10 @@ const About = () => {
       </div>
       <div className="footer">
         <div className="image-group">
-          <img src={photo1} role="presentation" />
-          <img src={photo2} role="presentation" />
-          <img src={photo3} role="presentation" />
-          <img src={photo4} role="presentation" />
+          <img src={photo1} alt="photo1" />
+          <img src={photo2} alt="photo2" />
+          <img src={photo3} alt="photo3" />
+          <img src={photo4} alt="photo4" />
         </div>
         <div className="more">
           <Link to="/projects">see more >></Link>

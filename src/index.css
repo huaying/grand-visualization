@@ -44,3 +44,24 @@ a:hover {
 .panel .panel-body {
   font-size: 20px;
 }
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+}
+
+.fade-leave {
+  opacity: 1;
+  z-index: 1;
+}
+
+.home.fade-leave.fade-leave-active > .home-bg {
+  -webkit-animation: blur 250ms linear forwards;
+}
+
+@keyframes blur {
+  to {
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    filter: blur(20px);
+  }
+}

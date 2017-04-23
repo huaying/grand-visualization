@@ -48,10 +48,11 @@ const HireUs = () => {
             height="450"
             frameBorder="0"
             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAjc1VIVNngxBdpjp3RZ25poJn7VPNNZo0
-              &q=USC,LA&zoom=9"
+              &q=420E+3rd+Street,+Suite+1050,+Los+Angeles,+CA+90013
+              &zoom=13"
           />
         </div>
-        <div className="footer">
+        <div className="copyright">
           Copyright © 2017, Grand Visionary Inc. All rights reserved.
         </div>
       </div>

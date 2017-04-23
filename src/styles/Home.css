@@ -1,7 +1,14 @@
-.Home {
-  background-image: url("../images/landing-hero.png");
+.home-bg {
+  position: fixed;
+  top: -20px;
+  left: -20px;
+
+  /* Preserve aspet ratio */
+  min-width: calc(100% + 40px);
+  min-height: calc(100% + 40px);
+}
+
+.home {
+  overflow-y: hidden;
   height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
 }

@@ -69,8 +69,8 @@
   background: linear-gradient(#000, #555);
 }
 
-.hire-us .footer {
-  margin-bottom: 50px;
+.hire-us .copyright {
+  padding: 50px 0 15px 0;
 }
 
 .hire-us .google-maps {

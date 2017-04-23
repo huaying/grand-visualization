@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../images/landing-logo.png';
+import logo from '../images/landing-logo.svg';
 import { Link, NavLink } from 'react-router-dom';
 
 const LogoNav = () => (

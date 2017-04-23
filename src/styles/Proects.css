@@ -57,3 +57,13 @@
 .projects .content img {
   width: 100%;
 }
+
+.projects .copyright {
+  padding: 50px 0 15px 0;
+}
+
+@media (max-width: 920px) {
+  .projects .copyright {
+    padding-left: 15px;
+  }
+}
