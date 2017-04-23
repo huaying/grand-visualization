@@ -20,3 +20,9 @@
 .nav nav .active {
   text-decoration: underline;
 }
+
+.home .logo {
+  position: fixed;
+  left: 10%;
+  top: 20%;
+}

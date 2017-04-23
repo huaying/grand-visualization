@@ -17,17 +17,17 @@ const App = () => (
           <CSSTransitionGroup
             component="div"
             transitionName="fade"
-            transitionEnterTimeout={250}
+            transitionEnter={false}
             transitionLeaveTimeout={250}
           >
             <Switch location={location} key={location.key}>
               <Route exact path="/" component={Home} />
-              <Route path="/about" component={About} />
-              <Route path="/hire_us" component={HireUs} />
             </Switch>
           </CSSTransitionGroup>
         )}
       />
+      <Route path="/about" component={About} />
+      <Route path="/hire_us" component={HireUs} />
       <Route path="/projects" component={Projects} />
     </div>
   </Router>

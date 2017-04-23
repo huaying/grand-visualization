@@ -9,6 +9,5 @@
 }
 
 .home {
-  overflow-y: hidden;
-  height: 100%;
+  overflow: hidden;
 }

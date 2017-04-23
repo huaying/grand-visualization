@@ -19,7 +19,6 @@ class Home extends Component {
     return (
       <div className="home">
         <img src={bg} className="home-bg" alt="" />
-        {/* <div key="home" className="home-bg"></div> */}
         <LogoNav />
       </div>
     );
