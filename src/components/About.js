@@ -11,10 +11,10 @@ import icon4 from '../images/icon4.png';
 import setFullScreen from '../lib/setFullScreen';
 import { Link } from 'react-router-dom';
 
-const photo1 = '/work/p8.png';
-const photo2 = '/work/p22.png';
-const photo3 = '/work/p41.png';
-const photo4 = '/work/p43.png';
+const photo1 = '/preview/7.jpg';
+const photo2 = '/preview/24.jpg';
+const photo3 = '/preview/42.jpg';
+const photo4 = '/preview/43.jpg';
 
 const About = () => {
   setFullScreen(false);
