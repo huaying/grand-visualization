@@ -56,6 +56,7 @@
 
 .projects .content img {
   width: 100%;
+  cursor: pointer;
 }
 
 .projects .copyright {
