@@ -16,7 +16,7 @@ const App = () => (
         render={({ location }) => (
           <CSSTransitionGroup
             component="div"
-            transitionName="fade"
+            transitionName="blur"
             transitionEnter={false}
             transitionLeaveTimeout={250}
           >

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/Proects.css';
 import { Nav } from './LogoNav';
+import { CSSTransitionGroup } from 'react-transition-group';
 import setFullScreen from '../lib/setFullScreen';
 
 const imgDir = 'preview/';
@@ -13,11 +14,11 @@ const photoGroup3 = [6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42];
 
 class Projects extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       slidePicture: null,
       resize: false,
-    }
+    };
   }
 
   componentDidMount() {
@@ -25,13 +26,13 @@ class Projects extends Component {
     window.addEventListener('resize', () => this.resize());
   }
 
-  componentWillUnmount() {
-    window.removeEventListener('resize', () => this.resize());
-  }
-
   shouldComponentUpdate() {
     // any state update just do re-render
     return true;
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', () => this.resize());
   }
 
   getImage(src, idx) {
@@ -52,13 +53,17 @@ class Projects extends Component {
     const boxStyle = {
       position: 'absolute',
       top, left,
-      background: 'rgba(0, 0, 0, 0.5)',
+      background: 'rgba(0, 0, 0, 0.7)',
       height: '100%',
       width: '100%',
       cursor: 'pointer',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
+    };
+    const imgStyle = {
+      background: 'white',
+      padding: '15px',
     };
     return (
       <div
@@ -68,7 +73,7 @@ class Projects extends Component {
           setFullScreen(false);
         }}
       >
-        <img src={`${workImgDir}${pictureId}.jpg`} alt="work" />
+        <img style={imgStyle} src={`${workImgDir}${pictureId}.jpg`} alt="work" />
       </div>
     );
   }
@@ -117,8 +122,15 @@ class Projects extends Component {
             Copyright © 2017, Grand Visionary Inc. All rights reserved.
           </div>
         </div>
+        <CSSTransitionGroup
+          component="div"
+          transitionName="fade"
+          transitionEnterTimeout={1000}
+          transitionLeaveTimeout={1000}
+        >
         {this.state.slidePicture !== null &&
           this.showSlidePicture(this.state.slidePicture)}
+        </CSSTransitionGroup>
       </div>
     );
   }

@@ -45,15 +45,15 @@ a:hover {
   font-size: 20px;
 }
 
-.fade-enter.fade-enter-active {
+.blur-enter.blur-enter-active {
   opacity: 1;
 }
 
-.fade-leave.fade-leave-active {
+.blur-leave.blur-leave-active {
   opacity: 1;
 }
 
-.home.fade-leave.fade-leave-active > .home-bg {
+.home.blur-leave.blur-leave-active > .home-bg {
   -webkit-animation: blur 250ms linear forwards;
 }
 
