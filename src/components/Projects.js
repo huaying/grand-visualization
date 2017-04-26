@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import '../styles/Proects.css';
 import { Nav } from './LogoNav';
 import { CSSTransitionGroup } from 'react-transition-group';
@@ -60,10 +61,23 @@ class Projects extends Component {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
+      userSelect: 'none',
     };
     const imgStyle = {
       background: 'white',
       padding: '15px',
+    };
+    const tuneSize = () => {
+      const imageDom = ReactDOM.findDOMNode(this.refs.picture);
+      const height = imageDom.height;
+      const width = imageDom.width;
+      if (height > width) {
+        imageDom.style.width = 'auto';
+        imageDom.style.height = '80%';
+      } else {
+        imageDom.style.width = '80%';
+        imageDom.style.height = 'auto';
+      }
     };
     return (
       <div
@@ -73,7 +87,13 @@ class Projects extends Component {
           setFullScreen(false);
         }}
       >
-        <img style={imgStyle} src={`${workImgDir}${pictureId}.jpg`} alt="work" />
+        <img
+          ref="picture"
+          style={imgStyle}
+          src={`${workImgDir}${pictureId}.jpg`}
+          onLoad={tuneSize}
+          alt="work"
+        />
       </div>
     );
   }
