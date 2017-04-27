@@ -6,7 +6,7 @@ import { CSSTransitionGroup } from 'react-transition-group';
 import setFullScreen from '../lib/setFullScreen';
 
 const imgDir = 'preview/';
-const workImgDir = 'preview/';
+const workImgDir = 'https://grand-visualization-images.herokuapp.com/';
 const heroPhoto1 = `${imgDir}1.jpg`;
 const heroPhoto2 = `${imgDir}3.jpg`;
 const photoGroup1 = [2, 4, 7, 10, 13, 16, 19, 22, 25, 28, 31, 34, 37, 40];
@@ -46,6 +46,23 @@ class Projects extends Component {
       />);
   }
 
+  tuneSize() {
+    const imageDom = ReactDOM.findDOMNode(this.refs.picture);
+    const imageRatio = imageDom.width / imageDom.height;
+    const windowRatio = window.innerWidth / window.innerHeight;
+    // console.log(imageDom.width, imageDom.height, window.innerWidth, window.innerHeight)
+    // console.log(imageRatio, windowRatio)
+    if (windowRatio < imageRatio) {
+      imageDom.style.width = '80%';
+      imageDom.style.height = 'auto';
+    } else {
+      imageDom.style.width = 'auto';
+      imageDom.style.height = '80%';
+    }
+    imageDom.style.transition = 'opacity 0.5s ease-out';
+    imageDom.style.opacity = '1';
+  }
+
   showSlidePicture(pictureId) {
     setFullScreen(true);
     const doc = document.documentElement;
@@ -55,7 +72,7 @@ class Projects extends Component {
       position: 'absolute',
       top, left,
       background: 'rgba(0, 0, 0, 0.7)',
-      height: '100%',
+      height: window.innerHeight,
       width: '100%',
       cursor: 'pointer',
       display: 'flex',
@@ -66,19 +83,9 @@ class Projects extends Component {
     const imgStyle = {
       background: 'white',
       padding: '15px',
+      opacity: '0',
     };
-    const tuneSize = () => {
-      const imageDom = ReactDOM.findDOMNode(this.refs.picture);
-      const height = imageDom.height;
-      const width = imageDom.width;
-      if (height > width) {
-        imageDom.style.width = 'auto';
-        imageDom.style.height = '80%';
-      } else {
-        imageDom.style.width = '80%';
-        imageDom.style.height = 'auto';
-      }
-    };
+
     return (
       <div
         style={boxStyle}
@@ -91,7 +98,7 @@ class Projects extends Component {
           ref="picture"
           style={imgStyle}
           src={`${workImgDir}${pictureId}.jpg`}
-          onLoad={tuneSize}
+          onLoad={() => this.tuneSize()}
           alt="work"
         />
       </div>
@@ -101,6 +108,7 @@ class Projects extends Component {
   resize() {
     if (this.state.slidePicture !== null) {
       this.setState({ resize: true });
+      this.tuneSize();
     }
   }
 

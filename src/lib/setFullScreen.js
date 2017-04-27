@@ -1,9 +1,12 @@
+const preventDefault = (e) => e.preventDefault();
+
 const setFullScreen = (fullScreen) => {
   if (fullScreen) {
-    document.body.style.overflow = 'hidden';
+    document.body.className = 'fullscreen';
+    document.body.addEventListener('touchmove', preventDefault);
   } else {
-    document.body.style.overflow = 'inherit';
-    document.body.style.overflowX = 'hidden';
+    document.body.className = '';
+    document.body.removeEventListener('touchmove', preventDefault);
   }
 };
 

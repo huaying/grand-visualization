@@ -1,11 +1,11 @@
 .home-bg {
   position: fixed;
-  top: -20px;
-  left: -20px;
+  top: -50px;
+  left: -50px;
 
   /* Preserve aspet ratio */
-  min-width: calc(100% + 40px);
-  min-height: calc(100% + 40px);
+  min-width: calc(100vh + 100px);
+  min-height: calc(100vh + 100px);
 }
 
 .home {

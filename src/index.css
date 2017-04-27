@@ -11,6 +11,9 @@ body {
   background: #EFEFEF;
 }
 
+body.fullscreen {
+  overflow: hidden;
+}
 
 a {
   text-decoration: none;
@@ -45,22 +48,18 @@ a:hover {
   font-size: 20px;
 }
 
-.blur-enter.blur-enter-active {
-  opacity: 1;
-}
-
 .blur-leave.blur-leave-active {
   opacity: 1;
 }
 
 .home.blur-leave.blur-leave-active > .home-bg {
-  -webkit-animation: blur 250ms linear forwards;
+  -webkit-animation: blur 1000ms ease-in forwards;
 }
 
 @keyframes blur {
   to {
-    -webkit-filter: blur(20px);
-    -moz-filter: blur(20px);
-    filter: blur(20px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    filter: blur(10px);
   }
 }

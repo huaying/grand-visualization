@@ -18,7 +18,7 @@ const App = () => (
             component="div"
             transitionName="blur"
             transitionEnter={false}
-            transitionLeaveTimeout={250}
+            transitionLeaveTimeout={1000}
           >
             <Switch location={location} key={location.key}>
               <Route exact path="/" component={Home} />
