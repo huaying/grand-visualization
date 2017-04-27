@@ -48,9 +48,10 @@ class Projects extends Component {
 
   tuneSize() {
     const imageDom = ReactDOM.findDOMNode(this.refs.picture);
-    const imageRatio = imageDom.width / imageDom.height;
+    const imageRatio = imageDom.naturalWidth / imageDom.naturalHeight;
     const windowRatio = window.innerWidth / window.innerHeight;
-    // console.log(imageDom.width, imageDom.height, window.innerWidth, window.innerHeight)
+    // console.log(imageDom.naturalWidth, imageDom.naturalHeight,
+    // window.innerWidth, window.innerHeight)
     // console.log(imageRatio, windowRatio)
     if (windowRatio < imageRatio) {
       imageDom.style.width = '80%';
