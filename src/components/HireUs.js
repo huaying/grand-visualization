@@ -16,32 +16,29 @@ const HireUs = () => {
             Do not hesitate to contact us for any inquiries,
             we will reach back to you as soon as possible.
             </p>
-            <p>xxx.xxx.xxxx</p>
+            <div className="contact-info">
+              <div className="row">
+                <h3 className="col right">Phone</h3>
+                <span className="col left">+1 8188356623</span>
+              </div>
+              <div className="row">
+                <h3 className="col right">Email</h3>
+                <span className="col left">
+                  <a href="mailto:sug@grandvisualization.com" rel="nofollow">
+                    sug@grandvisualization.com
+                  </a>
+                </span>
+              </div>
+              <div className="row">
+                <h3 className="col right">Address</h3>
+                <span className="col left">
+                  420E 3rd Street, Suite 1050. <br />
+                  Los Angeles, California 90013, U.S.A
+                </span>
+              </div>
+            </div>
           </div>
         </div>
-        <form className="contact-form">
-          <div className="group">
-            <div className="contact-name">
-              <label>Name *</label>
-              <input type="text" />
-            </div>
-            <div className="contact-company">
-              <label>Company</label>
-              <input type="text" />
-            </div>
-          </div>
-          <div className="contact-email">
-            <label>Email Address *</label>
-            <input type="text" />
-          </div>
-          <div className="contact-message">
-            <label>Message *</label>
-            <textarea rows="20"></textarea>
-          </div>
-          <div className="submit">
-            <button type="button">SUBMIT</button>
-          </div>
-        </form>
         <div className="google-maps">
           <iframe
             width="720"

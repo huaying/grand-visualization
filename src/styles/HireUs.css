@@ -1,80 +1,48 @@
-.contact-form {
-  margin-top: -40px;
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-form > *{
-  padding: 10px 0;
-  flex: 1;
-}
-
-.contact-form .group {
-  display: flex;
-  justify-content: space-between;
-}
-
-.contact-form .group > * {
-  flex: 1;
-
-}
-
-.contact-form .contact-name {
-  margin-right: 10px;
-}
-
-.contact-form .contact-company {
-  margin-left: 10px;
-}
-
-
-.contact-form label, .contact-form input, .contact-form textarea {
-  display: block;
-  width: calc(100% - 20px);
-}
-
-.contact-form label {
-  height: 42px;
-}
-
-.contact-form input {
-  height: 42px;
-  font-size: 20px;
-  border: 1px solid #AAA;
-  border-radius: 4px;
-  padding: 5px 10px;
-}
-
-.contact-form textarea{
-  height: 420px;
-  font-size: 20px;
-  border: 1px solid #AAA;
-  border-radius: 4px;
-  padding: 5px 10px;
-}
-
-.contact-form .submit {
-  text-align: center;
-}
-
-.contact-form .submit button {
-  cursor: pointer;
-  height: 36px;
-  font-size: 12px;
-  font-weight: bold;
-  color: #FFF;
-  width: 150px;
-  border-radius: 7px;
-  border: none;
-  background: linear-gradient(#000, #555);
-}
-
 .hire-us .copyright {
   padding: 50px 0 15px 0;
 }
 
+.hire-us .left {
+  text-align: left;
+}
+
+.hire-us .right {
+  text-align: right;
+}
+
+.hire-us h3 {
+  margin: 0;
+}
+
+.hire-us .contact-info {
+  margin-top: 100px;
+}
+
+
+.hire-us .contact-info a {
+  color: #0b87d4;
+}
+
+.hire-us .contact-info .row .col{
+  display: inline-block;
+  width: 40%;
+  padding: 15px;
+  vertical-align: middle;
+}
+
+@media (max-width: 640px) {
+  .hire-us .contact-info .row .col {
+    display: block;
+    width: auto;
+    padding: 10px;
+  }
+
+  .hire-us .col.right {
+    text-align: left;
+  }
+}
+
 .hire-us .google-maps {
-  margin: 100px 0;
   position: relative;
   padding-bottom: 60%;
   height: 0;
