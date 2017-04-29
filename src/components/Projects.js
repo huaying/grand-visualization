@@ -4,9 +4,9 @@ import '../styles/Proects.css';
 import { Nav } from './LogoNav';
 import { CSSTransitionGroup } from 'react-transition-group';
 import setFullScreen from '../lib/setFullScreen';
+import { slidePictures } from '../source';
 
 const imgDir = 'preview/';
-const workImgDir = 'https://grand-visualization-images.herokuapp.com/';
 const heroPhoto1 = `${imgDir}1.jpg`;
 const heroPhoto2 = `${imgDir}3.jpg`;
 const photoGroup1 = [2, 4, 7, 10, 13, 16, 19, 22, 25, 28, 31, 34, 37, 40];
@@ -98,7 +98,7 @@ class Projects extends Component {
         <img
           ref="picture"
           style={imgStyle}
-          src={`${workImgDir}${pictureId}.jpg`}
+          src={slidePictures[pictureId - 1]}
           onLoad={() => this.tuneSize()}
           alt="work"
         />
