@@ -1,3 +1,6 @@
+.about {
+  background: #EFEFEF;
+}
 .about .icon_group {
   display: flex;
   margin: 60px auto 100px;

@@ -16,8 +16,12 @@
 
 .hire-us .contact-info {
   margin-top: 100px;
+  font-weight: 600;
 }
 
+.hire-us .contact-info > div {
+  padding: 15px 0;
+}
 
 .hire-us .contact-info a {
   color: #0b87d4;

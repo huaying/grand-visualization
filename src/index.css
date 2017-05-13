@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'National-Light', sans-serif;
-  background: #EFEFEF;
+  background: #EFEFEF url(./images/grid.png) repeat;
 }
 
 body.fullscreen {
@@ -42,6 +42,7 @@ a:hover {
 .panel .panel-title {
   margin-bottom: 30px;
   font-size: 30px;
+  font-weight: 600;
 }
 
 .panel .panel-body {
