@@ -83,7 +83,7 @@ class Projects extends Component {
     };
     const imgStyle = {
       background: 'white',
-      padding: '15px',
+      padding: '5px',
       opacity: '0',
     };
 
