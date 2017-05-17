@@ -35,12 +35,12 @@ const About = () => {
             narratives for your design project.
             </p>
             <p>
-            Our new office located in Downtown Los Angeles, allows us to provide
-            in-person services for clients located in the Greater Los Angeles
-            Area. We can dispatch our specialists to work onsite and revise at
-            the final stage of the visualization project until your satisfaction.
-            Also, we are willing to work with you via the Internet regardless of
-            your location.
+            Our new office located in Downtown Los Angeles, we are willing to
+            work with you via the Internet regardless of your location. Also,
+            allow us to provide in-person services for clients located in the
+            Greater Los Angeles Area. We can dispatch our specialists to work
+            onsite and revise at the final stage of the visualization project
+            until your satisfaction.
             </p>
             <p>
             We look forward to helping you create stunning visualizations that
