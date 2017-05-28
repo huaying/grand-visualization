@@ -11,7 +11,7 @@ export const slidePictures = [
   'https://dl.dropboxusercontent.com/s/njclj220u95szsh/10.jpg',
   'https://dl.dropboxusercontent.com/s/hxgb118saa6no3k/11.jpg',
   'https://dl.dropboxusercontent.com/s/0u57u2en75m9f1z/12.jpg',
-  'https://dl.dropboxusercontent.com/s/0u57u2en75m9f1z/12.jpg',
+  'https://dl.dropboxusercontent.com/s/479sf3x9adhmalt/13.jpg',
   'https://dl.dropboxusercontent.com/s/3yfg9m3k1qkko2m/14.jpg',
   'https://dl.dropboxusercontent.com/s/c01k8mq61ugvn6l/15.jpg',
   'https://dl.dropboxusercontent.com/s/za33468ak3vdgbv/16.jpg',
