@@ -40,9 +40,15 @@ a:hover {
 }
 
 .panel .panel-title {
-  margin-bottom: 30px;
+  text-align: center;
+  max-width: 400px;
+  padding-bottom: 20px;
+  margin: 0 auto 25px;
   font-size: 30px;
   font-weight: 600;
+  border-bottom: 7px;
+  border-color: #BDDBDB;
+  border-bottom-style: solid;
 }
 
 .panel .panel-body {
