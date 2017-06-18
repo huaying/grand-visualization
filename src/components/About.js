@@ -22,11 +22,12 @@ import how1 from '../images/how1.jpg';
 import how2 from '../images/how2.jpg';
 import how3 from '../images/how3.jpg';
 import { Link } from 'react-router-dom';
+import { source } from '../source';
 
-const photo1 = '/preview/7.jpg';
-const photo2 = '/preview/24.jpg';
-const photo3 = '/preview/42.jpg';
-const photo4 = '/preview/43.jpg';
+const photo1 = `${source}/preview/7.jpg`;
+const photo2 = `${source}/preview/24.jpg`;
+const photo3 = `${source}/preview/42.jpg`;
+const photo4 = `${source}/preview/43.jpg`;
 
 const About = () => {
   setFullScreen(false);
@@ -124,7 +125,9 @@ const About = () => {
           <div className="panel-body">
             <div className="flow">
               <div>
-                <img className="flow-small" src={choose1} alt="one" />
+                <div className="flow-small">
+                  <img src={choose1} alt="one" />
+                </div>
                 <h3>Opportunity to Streamline your Business</h3>
                 <p>
                   We provide services that lower operational and labor costs for
@@ -135,7 +138,9 @@ const About = () => {
                 </p>
               </div>
               <div>
-                <img className="flow-small" src={choose2} alt="two" />
+                <div className="flow-small">
+                  <img src={choose2} alt="two" />
+                </div>
                 <h3>All-Around Professionalism</h3>
                 <p>
                   Our team is well experienced with both larger and smaller scale
@@ -145,7 +150,9 @@ const About = () => {
                 </p>
               </div>
               <div>
-                <img className="flow-small" src={choose3} alt="three" />
+                <div className="flow-small">
+                  <img src={choose3} alt="three" />
+                </div>
                 <h3>Competitive Price</h3>
                 <p>
                   Our company has very competitive pricing, especially for a
@@ -157,7 +164,9 @@ const About = () => {
             </div>
             <div className="flow">
               <div>
-                <img className="flow-small" src={choose4} alt="four" />
+                <div className="flow-small">
+                  <img src={choose4} alt="four" />
+                </div>
                 <h3>Flexibility</h3>
                 <p>
                   With design projects, we completely understand the importance
@@ -167,7 +176,9 @@ const About = () => {
                 </p>
               </div>
               <div>
-                <img className="flow-small" src={choose5} alt="five" />
+                <div className="flow-small">
+                  <img src={choose5} alt="five" />
+                </div>
                 <h3>Efficient Communication</h3>
                 <p>
                   We make it easy for you to communicate with us.
@@ -178,7 +189,9 @@ const About = () => {
                 </p>
               </div>
               <div>
-                <img className="flow-small" src={choose6} alt="six" />
+                <div className="flow-small">
+                  <img src={choose6} alt="six" />
+                </div>
                 <h3>Long Term Options</h3>
                 <p>
                   If you are interested in long term cooperation with Grand

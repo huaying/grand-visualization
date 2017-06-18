@@ -1,3 +1,4 @@
+export const source = "https://huaying.github.io/grand-visualization-image/";
 export const slidePictures = [
   'https://dl.dropboxusercontent.com/s/g00mwvzt9w139qe/1.jpg',
   'https://dl.dropboxusercontent.com/s/ajmr6d40eo40imm/2.jpg',

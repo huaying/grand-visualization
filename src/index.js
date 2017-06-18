@@ -7,10 +7,18 @@ import HireUs from './components/HireUs';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { CSSTransitionGroup } from 'react-transition-group';
 import './index.css';
+import createHistory from 'history/createBrowserHistory';
 
-
+const history = createHistory();
+console.log(history.location);
+history.listen((location) => {
+  console.log(123,location.pathname);
+  if (window.ga) {
+    window.ga('send', 'pageview', location.pathname);
+  }
+});
 const App = () => (
-  <Router>
+  <Router history={history}>
     <div>
       <Route
         render={({ location }) => (
