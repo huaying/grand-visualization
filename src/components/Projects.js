@@ -9,9 +9,9 @@ import { source } from '../source';
 const imgDir = `${source}preview/`;
 const heroPhoto1 = `${imgDir}1.jpg`;
 const heroPhoto2 = `${imgDir}3.jpg`;
-const photoGroup1 = [2, 4, 7, 10, 13, 16, 19, 22, 25, 28, 31, 34, 37, 40];
-const photoGroup2 = [5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38, 41, 43];
-const photoGroup3 = [6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42];
+const photoGroup1 = [2, 4, 7, 10, 13, 16, 19, 22, 25, 28, 31, 34, 37, 40, 44, 47, 50, 55, 58, 66];
+const photoGroup2 = [5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38, 41, 43, 45, 48, 51, 53, 56, 59, 61, 64];
+const photoGroup3 = [6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 46, 49, 52, 54, 57, 60, 62, 63, 65];
 
 class Projects extends Component {
   constructor(props) {
