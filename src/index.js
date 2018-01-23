@@ -22,16 +22,16 @@ const App = () => (
     <div>
       <Route
         render={({ location }) => (
-          <CSSTransitionGroup
-            component="div"
-            transitionName="blur"
-            transitionEnter={false}
-            transitionLeaveTimeout={1000}
-          >
+          // <CSSTransitionGroup
+          //   component="div"
+          //   transitionName="blur"
+          //   transitionEnter={false}
+          //   transitionLeaveTimeout={1000}
+          // >
             <Switch location={location} key={location.key}>
               <Route exact path="/" component={Home} />
             </Switch>
-          </CSSTransitionGroup>
+          // </CSSTransitionGroup>
         )}
       />
       <Route path="/about" component={About} />

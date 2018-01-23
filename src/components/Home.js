@@ -3,8 +3,6 @@ import LogoNav from './LogoNav';
 import '../styles/Home.css';
 import bg from '../images/landing-hero.png';
 import bg2 from '../images/landing-hero2.jpg';
-import bg3 from '../images/landing-hero3.jpg';
-import bg5 from '../images/landing-hero4.jpg';
 import bg4 from '../images/landing-hero5.jpg';
 import prelaodImg from '../images/hero-blur.png';
 import setFullScreen from '../lib/setFullScreen';
@@ -13,15 +11,12 @@ import ig from '../images/instagram.svg';
 import be from '../images/be.svg';
 
 class Home extends Component {
-  bgs = [bg, bg2, bg3, bg4, bg5];
+  bgs = [bg, bg2, bg4];
   cpations = [
     '',
     '5 Lakeshore Drive Residential, Philadelphia, PA',
-    'Office, Mecca, Arizona',
-    'Jamestown House, Dallas, TX',
     'Tiny Tim, Long Beach, CA',
   ];
-  // bgs = [bg, bg2]
   state = {
     bgIdx: 0,
     startSlide: false,
@@ -29,12 +24,12 @@ class Home extends Component {
 
   componentDidMount = () => {
     setFullScreen(true);
-    this.tick = setInterval(this.bgSlide, 3000);
+    this.tick = setInterval(this.bgSlide, 5000);
     this.preload();
   }
 
   componentWillUnmount = () => {
-    clearInterval(this.tick );
+    clearInterval(this.tick);
   }
 
   bgSlide = () => {
@@ -63,7 +58,8 @@ class Home extends Component {
     return (
       <div className="home">
         {background()}
-        <LogoNav />
+        <div id="cover"></div>
+        <LogoNav white />
         <div className="social">
           <a href="https://www.facebook.com/Grand-Visualization-485514698458079/" target="_blank">
             <img src={fb} />

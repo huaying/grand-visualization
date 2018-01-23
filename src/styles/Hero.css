@@ -3,18 +3,29 @@
   background-repeat: no-repeat;
   background-size: cover;
   overflow:hidden;
-  height: 500px;
+  height: 480px;
 }
 
 .logo {
   position: absolute;
-  left: 10%;
-  top: 20%;
+  left: 15%;
+  top: 18%;
 }
 
 .logo > nav {
   margin-left: 128px;
   font-size: 19px;
+}
+
+.logo > nav.white {
+  margin-left: 128px;
+  font-size: 19px;
+  color: white;
+}
+
+
+.logo > nav.white > a {
+  color: white;
 }
 
 .nav nav .active {
@@ -23,6 +34,6 @@
 
 .home .logo {
   position: fixed;
-  left: 10%;
-  top: 20%;
+  left: 15%;
+  top: 18%;
 }

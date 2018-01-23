@@ -2,10 +2,18 @@
   position: fixed;
   top: -50px;
   left: -50px;
-
   /* Preserve aspet ratio */
   min-width: calc(100vw + 100px);
   min-height: calc(100vh + 100px);
+}
+
+.home #cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.55);
 }
 
 .hide {
@@ -26,21 +34,21 @@
     right: 0; opacity: 1;
   }
   to {
-    right: 100vw; opacity: 0;
+    right: 100vw; opacity: 0.5;
   }
 }
 
 .slide-in {
   animation:linear;
   animation-name: run;
-  animation-duration: 0.5s;
+  animation-duration: 0.8s;
   z-index: 0;
 }
 
 .slide-out {
   animation:linear;
   animation-name: run2;
-  animation-duration: 0.5s;
+  animation-duration: 0.8s;
   z-index: -1;
 }
 
@@ -72,6 +80,7 @@
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
   padding: 7px 10px;
   border-radius: 5px;
+  z-index: 2;
 }
 
 @media (max-width: 720px) {
