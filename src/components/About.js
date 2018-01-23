@@ -60,6 +60,7 @@ const About = () => {
           <div className="panel-title">How we work</div>
           <div className="flow">
             <div>
+              <img className="flow-big" src={how1} />
               <div className="text-block">
                 <img className="flow-small" src={one} alt="one" />
                 <h3>Let us know your needs.</h3>
@@ -69,9 +70,9 @@ const About = () => {
                   possible and the consultation is free.
                 </p>
               </div>
-              <img className="flow-big" src={how1} />
             </div>
             <div>
+              <img className="flow-big" src={how2} />
               <div className="text-block">
                 <img className="flow-small" src={two} alt="two" />
                 <h3>3D Model Creation</h3>
@@ -82,11 +83,11 @@ const About = () => {
                   custmer satisfaction.
                 </p>
               </div>
-              <img className="flow-big" src={how2} />
             </div>
             <div>
+              <img className="flow-big" src={how3} />
               <div className="text-block">
-              <img className="flow-small" src={three} alt="three" />
+                <img className="flow-small" src={three} alt="three" />
                 <h3>Optimization & Delivery</h3>
                 <p>
                   We will be making changes until the drawings meet your satisfaction.
@@ -94,7 +95,6 @@ const About = () => {
                   be delivered to you.
                 </p>
               </div>
-              <img className="flow-big" src={how3} />
             </div>
           </div>
         </div>

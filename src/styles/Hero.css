@@ -12,6 +12,26 @@
   top: 18%;
 }
 
+.home .logo {
+  position: fixed;
+  left: 15%;
+  top: 18%;
+}
+
+@media (max-width: 480px) {
+  .hero.header {
+    height: 350px;
+  }
+  .logo {
+    left: 10%;
+    top: 10%;
+  }
+  .home .logo {
+    left: 10%;
+    top: 10%;
+  }
+}
+
 .logo > nav {
   margin-left: 128px;
   font-size: 19px;
@@ -30,10 +50,4 @@
 
 .nav nav .active {
   text-decoration: underline;
-}
-
-.home .logo {
-  position: fixed;
-  left: 15%;
-  top: 18%;
 }

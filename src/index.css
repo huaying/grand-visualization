@@ -30,6 +30,12 @@ a:hover {
   padding: 80px 20px 0;
 }
 
+@media (max-width: 720px) {
+  .content {
+    padding-top: 30px;
+  }
+}
+
 .quote {
   margin-bottom: 80px;
   font-size: 32px;
