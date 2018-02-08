@@ -10,6 +10,7 @@ import fb from '../images/facebook.svg';
 import ig from '../images/instagram.svg';
 import be from '../images/be.svg';
 
+const SLIDE_INTERVAL = 6500; //ms
 class Home extends Component {
   bgs = [bg, bg2, bg4];
   cpations = [
@@ -24,7 +25,7 @@ class Home extends Component {
 
   componentDidMount = () => {
     setFullScreen(true);
-    this.tick = setInterval(this.bgSlide, 5000);
+    this.tick = setInterval(this.bgSlide, SLIDE_INTERVAL);
     this.preload();
   }
 
